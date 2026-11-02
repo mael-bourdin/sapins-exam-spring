@@ -24,4 +24,9 @@ public class SapinController {
         return sapinService.createSapin();
     }
 
+    @PostMapping("addDecoration")
+    public boolean addDecoration(@RequestParam Long idSapin, @RequestParam Long idDecoration) {
+        return sapinService.addDecoration(idSapin, idDecoration);
+    }
+
 }
