@@ -86,4 +86,8 @@ public class SapinService {
         return bonDeCommande;
     }
 
+    public BonDeCommande getBonDeCommande(Long id) {
+        return bonDeCommandeRepository.findById(id).orElse(null);
+    }
+
 }

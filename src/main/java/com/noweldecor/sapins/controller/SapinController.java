@@ -35,4 +35,9 @@ public class SapinController {
         return sapinService.vente(idSapin, idClient);
     }
 
+    @GetMapping("commande/get")
+    public BonDeCommande getBonDeCommande(@RequestParam Long id) {
+        return sapinService.getBonDeCommande(id);
+    }
+
 }
